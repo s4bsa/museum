@@ -17,37 +17,29 @@
       height: 100vh;
       gap: 5px; /* Minimize gap between header and iframes */
     }
-
-    header {
-      font-size: 2rem;
-      font-weight: bold;
+    h1 {
+      font-size: 2em;
       color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      margin-bottom: 10px; 
     }
-
     .iframe-container {
       display: flex;
       justify-content: center;
       gap: 2px; /* Almost no space between iframes */
     }
 
-    .scaled-iframe {
-      transform: scale(0.45); /* Adjust scale to fit all three iframes */
-      transform-origin: top left;
-      width: 750px;  /* original size still needed for layout */
-      height: 750px;
-      border: none;
-    }
   </style>
 </head>
 <body>
 
-  <header>Gallery</header>
+  <h1>Gallery</h1>
   <div class="iframe-container">
     <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Eagle"></iframe>
     <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Eagle"></iframe>
     <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Eagle"></iframe>
-  </div>
+    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Eagle"></iframe>  
+</div>
 
 </body>
 </html>
