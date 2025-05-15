@@ -11,28 +11,39 @@
       background: url('museum.png') no-repeat center center fixed;
       background-size: cover;
       display: flex;
-      flex-direction: column;
+      flex-direction: column; 
       justify-content: center;
       align-items: center;
       height: 100vh;
-      gap: 10px; /* Adjust gap for better spacing */
+      gap: 2px;
     }
     h1 {
       font-size: 2em;
       color: white;
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 10px; 
     }
     .iframe-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 10px; /* Adjust space between iframes */
     }
-    .scaled-iframe {
-      width: 650px;
-      height: 650px;
-      border: none;
+    .arrow {
+      position: absolute;
+      left: 10px; /* Move arrow to the left side */
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5em;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none; /* Remove underline from link */
+    }
+    .arrow::before {
+      content: '←'; /* Change arrow direction to left */
+      font-size: 2em;
     }
   </style>
 </head>
@@ -40,9 +51,18 @@
 
   <h1>Gallery</h1>
   <div class="iframe-container">
-    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Eagle"></iframe>
-    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Starry"></iframe>
+    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Eagle"   
+      width="700" 
+      height="700" 
+      style="border:none;">  
+    </iframe>
+    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Starry"   
+      width="700" 
+      height="700" 
+      style="border:none;">  
+    </iframe>
   </div>
+  <a href="./gallery2.html" class="arrow">over here</a>
 
 </body>
 </html>
