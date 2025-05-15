@@ -13,9 +13,7 @@
       display: flex;
       flex-direction: column; 
       justify-content: center;
-      align-items: center;
       height: 100vh;
-      gap: 2px;
     }
     h1 {
       font-size: 2em;
@@ -26,13 +24,9 @@
     .iframe-container {
       display: flex;
       justify-content: center;
-      align-items: center;
-      gap: 0; /* Remove space between iframes */
-      padding: 10px; /* Add padding to prevent iframes from going off the page */
     }
     .arrow {
       position: absolute;
-      left: 10px; /* Move arrow to the left side */
       top: 50%;
       transform: translateY(-50%);
       font-size: 1.5em;
@@ -41,10 +35,20 @@
       display: flex;
       align-items: center;
       gap: 5px;
-      text-decoration: none; /* Remove underline from link */
+      text-decoration: none; 
     }
-    .arrow::before {
-      content: '←'; /* Change arrow direction to left */
+    .arrow-right {
+      right: 10px;
+    }
+    .arrow-right::after {
+      content: '→';
+      font-size: 2em;
+    }
+    .arrow-left {
+      left: 10px;
+    }
+    .arrow-left::before {
+      content: '←';
       font-size: 2em;
     }
   </style>
@@ -53,18 +57,14 @@
 
   <h1>Gallery</h1>
   <div class="iframe-container">
-    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Eagle"   
-      width="700" 
-      height="700" 
-      style="border:none;">  
-    </iframe>
-    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Starry"   
-      width="700" 
-      height="700" 
+    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Enfants"   
+      width="650" 
+      height="650" 
       style="border:none;">  
     </iframe>
   </div>
-  <a href="./gallery.html" class="arrow">over here</a>
+  <a href="./gallery3.html" class="arrow arrow-right">over here</a>
+  <a href="./gallery.html" class="arrow arrow-left">back</a>
 
 </body>
 </html>
