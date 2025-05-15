@@ -16,23 +16,21 @@
       height: 100vh;
       gap: 20px;
     }
+
+    .scaled-iframe {
+      transform: scale(0.7); /* Adjust scale factor as needed */
+      transform-origin: top left;
+      width: 750px;  /* original size still needed for layout */
+      height: 750px;
+      border: none;
+    }
   </style>
 </head>
 <body>
 
-  <iframe src="https://s4bsa.github.io/museum/Eagle"
-     width="750" 
-     height="750" 
-     style="border:none;">
-  </iframe>
-  <iframe src="https://s4bsa.github.io/portfolio/Pong"
-     width="650" 
-     height="650" 
-     style="border:none;"></iframe>
-  <iframe src="https://s4bsa.github.io/portfolio/Pong"
-     width="650" 
-     height="650" 
-     style="border:none;"></iframe>
+  <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Eagle"></iframe>
+  <iframe class="scaled-iframe" src="https://s4bsa.github.io/portfolio/Pong"></iframe>
+  <iframe class="scaled-iframe" src="https://s4bsa.github.io/portfolio/Pong"></iframe>
 
 </body>
 </html>
