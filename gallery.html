@@ -26,8 +26,25 @@
     .iframe-container {
       display: flex;
       justify-content: center;
-      align-items: center;}
-
+      align-items: center;
+    }
+    .arrow {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5em;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none; /* Remove underline from link */
+    }
+    .arrow::after {
+      content: '→';
+      font-size: 2em;
+    }
   </style>
 </head>
 <body>
@@ -44,8 +61,8 @@
       height="650" 
       style="border:none;">  
     </iframe>
-
-</div>
+  </div>
+  <a href="./gallery2.html" class="arrow">over here</a>
 
 </body>
 </html>
