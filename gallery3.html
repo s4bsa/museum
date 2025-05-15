@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px 0;
+      background: url('museum.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 2em;
+      color: white;
+      text-align: center;
+      margin-bottom: 10px; 
+    }
+    .iframe-container {
+      display: flex;
+      justify-content: center;
+    }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5em;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none; 
+    }
+    .arrow-right {
+      right: 10px;
+    }
+    .arrow-right::after {
+      content: '→';
+      font-size: 2em;
+    }
+    .arrow-left {
+      left: 10px;
+    }
+    .arrow-left::before {
+      content: '←';
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Gallery</h1>
+  <div class="iframe-container">
+    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Starry"   
+      width="550" 
+      height="412" 
+      style="border:none;">  
+    </iframe>
+  </div>
+  <a href="./gallery3.html" class="arrow arrow-right">over here</a>
+  <a href="./gallery.html" class="arrow arrow-left">back</a>
+
+</body>
+</html>
