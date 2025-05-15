@@ -11,10 +11,24 @@
       background: url('museum.png') no-repeat center center fixed;
       background-size: cover;
       display: flex;
+      flex-direction: column; /* Stack header and iframes */
       justify-content: center;
       align-items: center;
       height: 100vh;
       gap: 20px;
+    }
+
+    header {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .iframe-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Space between iframes */
     }
 
     .scaled-iframe {
@@ -28,9 +42,12 @@
 </head>
 <body>
 
-  <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Eagle"></iframe>
-  <iframe class="scaled-iframe" src="https://s4bsa.github.io/portfolio/Pong"></iframe>
-  <iframe class="scaled-iframe" src="https://s4bsa.github.io/portfolio/Pong"></iframe>
+  <header>Gallery</header>
+  <div class="iframe-container">
+    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Eagle"></iframe>
+    <iframe class="scaled-iframe" src="https://s4bsa.github.io/portfolio/Pong"></iframe>
+    <iframe class="scaled-iframe" src="https://s4bsa.github.io/portfolio/Pong"></iframe>
+  </div>
 
 </body>
 </html>
