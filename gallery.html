@@ -7,46 +7,42 @@
   <style>
     body {
       margin: 0;
-      padding: 20px 0; /* Add vertical padding to center content better */
+      padding: 20px 0;
       background: url('museum.png') no-repeat center center fixed;
       background-size: cover;
       display: flex;
-      flex-direction: column; /* Stack header and iframes */
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      gap: 5px; /* Minimize gap between header and iframes */
+      gap: 10px; /* Adjust gap for better spacing */
     }
     h1 {
       font-size: 2em;
       color: white;
       text-align: center;
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
     }
     .iframe-container {
       display: flex;
       justify-content: center;
-      gap: 2px; /* Almost no space between iframes */
+      align-items: center;
+      gap: 10px; /* Adjust space between iframes */
     }
-
+    .scaled-iframe {
+      width: 650px;
+      height: 650px;
+      border: none;
+    }
   </style>
 </head>
 <body>
 
   <h1>Gallery</h1>
   <div class="iframe-container">
-    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Lady"   
-      width="650" 
-      height="650" 
-      style="border:none;">  
-    </iframe>
-    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Enfants"   
-      width="650" 
-      height="650" 
-      style="border:none;">  
-    </iframe>
-
-</div>
+    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Lady"></iframe>
+    <iframe class="scaled-iframe" src="https://s4bsa.github.io/museum/Enfants"></iframe>
+  </div>
 
 </body>
 </html>
